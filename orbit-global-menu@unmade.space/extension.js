@@ -361,12 +361,15 @@ export default class OrbitGlobalMenuExtension extends Extension {
 			this._settings.disconnect(id);
 		this._settingsHandlerIds = [];
 		cancelPendingActions();
+		// Before the menus, while the buttons are still alive. Styling is
+		// undone per button, and a blur effect has to go back to Blur My
+		// Shell rather than vanish with the actor it was attached to.
+		this._appearance?.destroy();
+		this._appearance = null;
 		this._menubar?.destroy();
 		this._menubar = null;
 		this._fallback?.destroy();
 		this._fallback = null;
-		this._appearance?.destroy();
-		this._appearance = null;
 		this._proxy?.destroy();
 		this._proxy = null;
 		this._daemon?.destroy();

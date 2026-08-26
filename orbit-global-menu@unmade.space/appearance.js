@@ -97,9 +97,17 @@ class WorkspaceIndicator {
 	destroy() {
 		Main.sessionMode.disconnect(this._sessionModeId);
 		this._sessionModeId = 0;
-		if (this._hiddenByUs)
-			this._indicator?.container.show();
+
+		const container = this._indicator?.container;
+		const restore = this._hiddenByUs;
+		// Disconnect before showing. show() emits notify::visible, and the
+		// handler below would read a setting that is still true and hide the
+		// pill straight back again.
 		this._untrack();
+		if (restore)
+			container?.show();
+
+		this._hiddenByUs = false;
 		this._settings = null;
 	}
 

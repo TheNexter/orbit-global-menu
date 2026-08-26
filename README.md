@@ -9,7 +9,7 @@ extension falls back twice before giving up:
 1. Applications that publish a menu over D-Bus get their real one, with
    working checkmarks and greyed-out items. A companion daemon called
    `orbit-menu` reads it and sends it to the extension as JSON.
-2. For 165 applications that publish nothing, the extension ships a menu built
+2. For 165+ applications that publish nothing, the extension ships a menu built
    from the app's documented keyboard shortcuts. Clicking an item sends that
    key combination to the window. This is how an Electron app gets a menu bar
    on Wayland.
@@ -87,7 +87,7 @@ Wayland falls through to a shortcut menu.
 
 ## Shortcut menus
 
-The 165 built-in mappings live in
+The built-in mappings live in
 `orbit-global-menu@unmade.space/shortcuts/apps`. Each is one JSON file naming
 the application, the identifiers it is recognised by, and its menus.
 
