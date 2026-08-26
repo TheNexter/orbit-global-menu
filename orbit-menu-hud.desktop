@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Orbit Menu HUD
+GenericName=Orbit Global Menu HUD
+Comment=Search the focused window's menus
+Exec=orbit-menu-hud
+TryExec=orbit-menu-hud
+Icon=search
+Terminal=false

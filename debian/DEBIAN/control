@@ -1,0 +1,13 @@
+Package: orbit-menu
+Source: orbit-menu
+Version: 1.0.0
+Architecture: all
+Maintainer: unmade.space <https://github.com/Unmade760>
+Depends: python3-gi, python3-dbus, appmenu-gtk3-module, python3:any
+Recommends: bamfdaemon, libkeybinder-3.0-0
+Section: python
+Priority: optional
+Homepage: https://github.com/Unmade760/orbit-global-menu
+Description: Companion daemon for the Orbit Global Menu GNOME Shell extension.
+ Reads the menu an application exports over D-Bus and hands it to the
+ extension, which draws it in the GNOME panel.
