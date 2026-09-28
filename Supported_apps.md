@@ -70,6 +70,7 @@
 - Inkscape
 - Insomnia
 - IntelliJ IDEA
+- Iotas
 - Joplin
 - Karere
 - Kdenlive

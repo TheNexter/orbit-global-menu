@@ -168,6 +168,7 @@
     "emacs.json",
     "qutebrowser.json",
     "terminator.json",
-    "ardour.json"
+    "ardour.json",
+    "iotas.json"
   ]
 }
