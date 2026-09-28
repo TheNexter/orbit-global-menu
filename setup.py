@@ -1,21 +1,21 @@
 import setuptools
 
-import orbitmenu
+import globalmenu
 
 with open('README.md', 'r') as fh:
 	long_description = fh.read()
 
 setuptools.setup(
-	name='orbit-menu',
-	version=orbitmenu.__version__,
+	name='global-menu',
+	version=globalmenu.__version__,
 	author='unmade.space',
-	description='Companion daemon for the Orbit Global Menu GNOME Shell extension',
+	description='Companion daemon for the Global Menu GNOME Shell extension',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
 	url='https://github.com/Unmade760/orbit-global-menu',
 	packages=setuptools.find_packages(),
 	data_files=[
-		('share/applications', ['orbit-menu-hud.desktop'])
+		('share/applications', ['global-menu-hud.desktop'])
 	],
 	install_requires=[
 		'PyGObject>=3.30.0'
@@ -31,8 +31,8 @@ setuptools.setup(
 	},
 	entry_points={
 		'console_scripts': [
-			'orbit-menu = orbitmenu.run:main',
-			'orbit-menu-hud = orbitmenu.inithud:main'
+			'global-menu = globalmenu.run:main',
+			'global-menu-hud = globalmenu.inithud:main'
 		]
 	}
 )

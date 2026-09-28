@@ -8,8 +8,8 @@ extension falls back twice before giving up:
 
 1. Applications that publish a menu over D-Bus get their real one, with
    working checkmarks and greyed-out items. A companion daemon called
-   `orbit-menu` reads it and sends it to the extension as JSON.
-2. For 165+ applications that publish nothing, the extension ships a menu built
+   `global-menu` reads it and sends it to the extension as JSON.
+2. For 168 applications that publish nothing, the extension ships a menu built
    from the app's documented keyboard shortcuts. Clicking an item sends that
    key combination to the window. This is how an Electron app gets a menu bar
    on Wayland.
@@ -26,14 +26,15 @@ Needs GNOME Shell 49 or 50, on Wayland or X11. Nothing else.
 ```sh
 git clone https://github.com/Unmade760/orbit-global-menu.git
 cd orbit-global-menu
-cp -r 'orbit-global-menu@unmade.space' ~/.local/share/gnome-shell/extensions/
+cp -r 'global-menu@unmade.space' ~/.local/share/gnome-shell/extensions/
+glib-compile-schemas ~/.local/share/gnome-shell/extensions/'global-menu@unmade.space'/schemas
 ```
 
 Log out and back in. GNOME Shell cannot load a new extension into a running
 Wayland session. Then:
 
 ```sh
-gnome-extensions enable orbit-global-menu@unmade.space
+gnome-extensions enable global-menu@unmade.space
 ```
 
 The menu bar should appear as soon as you focus a window.
@@ -63,7 +64,7 @@ Then, from the repository:
 pip install --user .
 ```
 
-Nothing goes in autostart. The extension starts `orbit-menu` when nobody owns
+Nothing goes in autostart. The extension starts `global-menu` when nobody owns
 its bus name and stops the process it started when it is disabled.
 
 On X11 only, `bamf` improves window matching and `libkeybinder` enables the
@@ -88,13 +89,13 @@ Wayland falls through to a shortcut menu.
 ## Shortcut menus
 
 The built-in mappings live in
-`orbit-global-menu@unmade.space/shortcuts/apps`. Each is one JSON file naming
+`global-menu@unmade.space/shortcuts/apps`. Each is one JSON file naming
 the application, the identifiers it is recognised by, and its menus.
 
 Preferences has an editor for them: pick an application, click the shortcut
 button on an item, and press the combination the way GNOME Settings does it.
 Editing a built-in writes a copy to
-`~/.config/orbit-global-menu/shortcuts/apps` and leaves the built-in alone.
+`~/.config/global-menu/shortcuts/apps` and leaves the built-in alone.
 Individual applications can be switched off from the same list.
 
 The file format is written up in [docs/shortcut-mappings.md](docs/shortcut-mappings.md).

@@ -33,3 +33,6 @@ MANIFEST
 debian/usr/
 debian/DEBIAN/md5sums
 *.deb
+
+# Compiled GSettings schemas
+*.compiled

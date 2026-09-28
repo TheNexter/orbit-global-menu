@@ -2,9 +2,9 @@
 set -e
 
 if which py3compile >/dev/null 2>&1; then
-	py3compile -p orbit-menu
+	py3compile -p global-menu
 fi
 if which pypy3compile >/dev/null 2>&1; then
-	pypy3compile -p orbit-menu  || true
+	pypy3compile -p global-menu  || true
 fi
 

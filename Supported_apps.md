@@ -2,6 +2,7 @@
 - Amberol
 - Android Studio
 - Anki
+- Ardour
 - Ark
 - Authenticator
 - Audacity
@@ -110,6 +111,7 @@
 - PyCharm
 - QGIS
 - qBittorrent
+- qutebrowser
 - RawTherapee
 - Remmina
 - Rhythmbox
@@ -134,6 +136,7 @@
 - Sublime Text
 - System Monitor
 - Telegram
+- Terminator
 - Text Editor (GNOME)
 - Thunderbird
 - Thunar

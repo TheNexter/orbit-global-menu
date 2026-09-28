@@ -15,7 +15,7 @@ assignees: ''
 - **Distribution**:
 - **GNOME Shell version**: <!-- gnome-shell --version -->
 - **Session**: <!-- Wayland or X11 -->
-- **Orbit Global Menu version**: <!-- a tag, a commit, or "latest" -->
+- **Global Menu version**: <!-- a tag, a commit, or "latest" -->
 - **Affected application**:
 
 **Log output**

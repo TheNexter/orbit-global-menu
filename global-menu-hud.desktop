@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Global Menu HUD
+GenericName=Global Menu HUD
+Comment=Search the focused window's menus
+Exec=global-menu-hud
+TryExec=global-menu-hud
+Icon=search
+Terminal=false

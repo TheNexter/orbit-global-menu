@@ -4,9 +4,9 @@ A mapping describes the menu bar to show for one application that does not
 export a menu of its own. Every item carries a keyboard shortcut, and clicking
 it sends that combination to the focused window.
 
-Built-in mappings live in `orbit-global-menu@unmade.space/shortcuts/apps` and
+Built-in mappings live in `global-menu@unmade.space/shortcuts/apps` and
 must be listed in `shortcuts/index.json`. User mappings live in
-`~/.config/orbit-global-menu/shortcuts/apps` and are picked up by being there.
+`~/.config/global-menu/shortcuts/apps` and are picked up by being there.
 A user file replaces the built-in with the same name outright, rather than
 merging into it.
 
@@ -67,11 +67,19 @@ Accepted modifiers are `<Ctrl>` (also `<Control>` and `<Primary>`),
 `<Shift>`, `<Alt>` and `<Super>`. `<Meta>` is rejected because it means
 different things on different setups.
 
-The key is either one printable character or a name: `F1` to `F12`, `Return`,
-`Escape`, `Tab`, `space`, `BackSpace`, `Delete`, `Home`, `End`, `Page_Up`,
-`Page_Down`, `Left`, `Up`, `Right`, `Down`, `plus`, `minus`, `comma`,
-`period`, `slash`, `question`, `Print`, `Insert`, `Menu`, `KP_0` to `KP_9`,
-`KP_Decimal`, `KP_Add`, `KP_Subtract`, `KP_Multiply`, `KP_Divide`, `KP_Enter`.
+The key is either one printable character or a keysym name: `F1` to `F12`,
+`Return`, `Escape`, `Tab`, `BackSpace`, `Delete`, `Home`, `End`, `Page_Up`,
+`Page_Down`, `Left`, `Up`, `Right`, `Down`, `Print`, `Insert`, `Menu`, `KP_0`
+to `KP_9`, `KP_Decimal`, `KP_Add`, `KP_Subtract`, `KP_Multiply`, `KP_Divide`,
+`KP_Enter`, and the X11 name of every ASCII punctuation character: `space`,
+`exclam`, `quotedbl`, `numbersign`, `dollar`, `percent`, `ampersand`,
+`apostrophe`, `parenleft`, `parenright`, `asterisk`, `plus`, `comma`, `minus`,
+`period`, `slash`, `colon`, `semicolon`, `less`, `equal`, `greater`,
+`question`, `at`, `bracketleft`, `backslash`, `bracketright`, `asciicircum`,
+`underscore`, `grave`, `braceleft`, `bar`, `braceright`, `asciitilde`.
+
+Punctuation can be written either way. `<Ctrl>/` and `<Ctrl>slash` are the
+same shortcut.
 
 A capital letter on its own is not Shift. Write `<Shift>a`, not `A`.
 
@@ -92,5 +100,5 @@ Unparseable shortcuts drop the item and log a warning. To see them, turn on
 **Debug shortcut menus** in preferences and watch:
 
 ```sh
-journalctl -f -o cat /usr/bin/gnome-shell | grep orbit
+journalctl -f -o cat /usr/bin/gnome-shell | grep global-menu
 ```
