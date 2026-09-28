@@ -1,0 +1,163 @@
+• Alacritty
+• Amberol
+• Android Studio
+• Anki
+• Ark
+• Authenticator
+• Audacity
+• Baobab (Disk Usage Analyzer)
+• Bitwarden
+• BleachBit
+• Blender
+• Bottles
+• Brave
+• Calculator
+• Calibre
+• Calendar
+• Celluloid
+• Characters
+• Cheese
+• Chrome (Google Chrome)
+• Chromium
+• Cider
+• Clocks
+• Connections
+• Contacts
+• Darktable
+• DBeaver
+• Decibels
+• Déjà Dup
+• Deluge
+• DigiKam
+• Discord
+• Disks
+• Dolphin
+• Drawing
+• Dropbox
+• EasyEffects
+• Element
+• Emacs
+• Epiphany (GNOME Web)
+• Evernote
+• Evolution
+• Extension Manager
+• Ferdium
+• File Roller
+• FileZilla
+• Firefox
+• Flatseal
+• FocusWriter
+• Foliate
+• Font Viewer
+• FreeCAD
+• Geary
+• Ghostty
+• GIMP
+• GitKraken
+• GNOME Boxes
+• GNOME Builder
+• GNOME Terminal
+• GNOME Tweaks
+• Godot
+• Gradia
+• GParted
+• GVim
+• Gwenview
+• HandBrake
+• Heroic Games Launcher
+• Impression
+• Inkscape
+• Insomnia
+• IntelliJ IDEA
+• Joplin
+• Karere
+• Kdenlive
+• KeePassXC
+• Kitty
+• Komikku
+• Konsole
+• Krita
+• LibreCAD
+• LibreOffice Calc
+• LibreOffice Impress
+• LibreOffice Writer
+• Logs
+• Logseq
+• Loupe (Image Viewer)
+• Lutris
+• Mailspring
+• Maps
+• Mattermost
+• Meld
+• Microsoft Teams
+• MPV
+• Nautilus (Files)
+• Nemo
+• Neovide
+• Nextcloud
+• Nicotine+
+• OBS Studio
+• Obsidian
+• Okular
+• ONLYOFFICE
+• Opera
+• Papers (Document Viewer)
+• PCManFM
+• PeaZip
+• Pinta
+• Postman
+• Ptyxis
+• PyCharm
+• QGIS
+• qBittorrent
+• RawTherapee
+• Remmina
+• Rhythmbox
+• Rocket.Chat
+• Scrcpy
+• Scrivener
+• Seahorse (Passwords & Keys)
+• Settings
+• Shotcut
+• Shotwell
+• Signal
+• Simple Scan (Document Scanner)
+• Skype
+• Slack
+• Sober
+• Software (GNOME Software)
+• Spotify
+• Standard Notes
+• Steam
+• Stremio
+• Sublime Text
+• System Monitor
+• Telegram
+• Text Editor (GNOME)
+• Thunar
+• Tilix
+• Timeshift
+• Todoist
+• Tor Browser
+• Transmission
+• Trello
+• Typora
+• Upscayl
+• Viber
+• Video Trimmer
+• Virt-Manager
+• VirtualBox
+• Vivaldi
+• VLC Media Player
+• VS Code
+• VSCodium
+• Warp
+• Weather
+• WebStorm
+• WezTerm
+• Xournal++
+• Zathura
+• Zed
+• Zen Browser
+• Zettlr
+• Zoom
