@@ -120,6 +120,7 @@
 - Settings
 - Shotcut
 - Shotwell
+- Showtime
 - Signal
 - Simple Scan (Document Scanner)
 - Skype
@@ -134,6 +135,7 @@
 - System Monitor
 - Telegram
 - Text Editor (GNOME)
+- Thunderbird
 - Thunar
 - Tilix
 - Timeshift
